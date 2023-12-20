@@ -45,9 +45,9 @@ header {
   text-decoration: none;
 }
 
-/* Change font color on hover for navbar items */
+
 .nav-item a:hover, .dropdown:hover .dropbtn {
-  color: #fdd365; /* Changed font color on hover */
+  color: #fdd365; 
 }
 
 .dropdown {
@@ -75,16 +75,16 @@ header {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd; /* Hover background color for dropdown items */
-  color: #205072; /* Keep font color consistent on hover for dropdown items */
+  background-color: #ddd; 
+  color: #205072; 
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Removed dropdown arrow indicators */
-.dropbtn::after {
+
+.dropbtn::after {/*may need to add arrows */
   content: "";
 }
 
@@ -127,6 +127,6 @@ a, a:visited {
 }
 
 a:hover {
-  color: #fdd365; /* Font color changes to a golden hue on hover */
+  color: #fdd365; /* font change to this color upon hover*/
   text-decoration: none;
 }

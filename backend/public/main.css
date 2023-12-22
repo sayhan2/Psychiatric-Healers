@@ -36,7 +36,7 @@ header {
 
 .nav-item, .dropdown {
   text-align: center;
-  padding: 10px 12px; /* Smaller padding for less boxy dropdown items */
+  padding: 10px 12px;
   display: block;
 }
 
@@ -73,7 +73,7 @@ header {
 
 .dropdown-content a {
   color: #205072;
-  padding: 8px 16px; /* Reduced padding for a slimmer look */
+  padding: 8px 16px; 
   text-decoration: none;
   display: block;
   text-align: left;
@@ -83,11 +83,11 @@ header {
 
 .dropdown-content a:hover {
   background-color: #ddd;
-  color: #205072; /* Keep the font color the same on hover */
+  color: #205072; 
 }
 
 .dropbtn::after {
-  content: ""; /* Removed the dropdown arrow */
+  content: ""; 
 }
 
 .logo {
@@ -131,10 +131,15 @@ a, a:visited {
 a:hover {
   text-decoration: none;
 }
+.dropbtn::after {
+  content: "▼";
+  font-size: 0.75em;
+  margin-left: 5px;
+}
 footer {
-  background-color: #2e4057; /* Your chosen dark navy color */
+  background-color: #2e4057; 
   color: white;
-  padding: 40px; /* Increased padding for a spacious look */
+  padding: 40px; 
   font-family: 'Arial', sans-serif;
 }
 
@@ -144,57 +149,234 @@ footer {
   align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap; /* Wrap items for responsiveness */
+  flex-wrap: wrap; 
 }
 
 .footer-section {
-  flex: 1; /* Distribute space evenly */
-  min-width: 200px; /* Minimum width for each section */
-  padding: 0 20px; /* Padding for spacing between sections */
+  flex: 1; 
+  min-width: 200px; 
+  padding: 0 20px; 
+  text-align: left; 
 }
 
 .footer-section h3, .footer-section h4 {
-  margin-bottom: 20px; /* Space below headings */
+  margin-bottom: 20px; 
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 .footer-section ul li a {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
-  display: block; /* Make each link fill the available line space */
-  padding: 5px 0; /* Padding for hit area */
+  display: block; 
+  padding: 5px 0; 
 }
 
 .footer-section ul li a:hover {
-  color: #fdd365; /* Highlight color on hover */
+  color: #fdd365; 
 }
 
 .footer-bottom {
   text-align: center;
-  border-top: 1px solid #44566c; /* Subtle border for separation */
-  padding-top: 20px; /* Space above the bottom text */
-  margin-top: 40px; /* Space above the border */
+  border-top: 1px solid #44566c; 
+  padding-top: 20px; 
+  margin-top: 40px; 
 }
 
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; 
   }
   
   .footer-section {
-    width: 100%; /* Full width for mobile view */
-    padding: 10px 0; /* Reduce padding in mobile view */
-    text-align: center; /* Center align the text */
+    width: 100%;
+    padding: 20px; 
+    text-align: left; 
   }
 
   .footer-bottom {
-    margin-top: 20px; /* Reduce margin in mobile view */
+    margin-top: 20px; 
+  }
+}
+img {
+  width: 100%; 
+  height: auto;
+}
+.resize-image {
+  width: 50%; 
+  height: auto;
+}
+.hero-image {
+  position: relative;
+  background-image: url('/assets/images/home.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 75vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.hero-content {
+  position: absolute;
+  top: 10%; 
+  width: 100%; 
+}
+.hero-heading {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  display: inline-block;
+  padding: 0.5em 1em;
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 2rem; 
+  }
+  .hero-content {
+    top: 15%; 
+  }
+}
+
+.section-title {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2.5rem; 
+  font-weight: 600; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+.our-mission {
+  background: #ffffff; 
+  padding: 4em 0;
+  text-align: center;
+}
+
+.mission-description {
+  font-family: 'Lato', sans-serif; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  line-height: 1.8; 
+  font-size: 1.2rem;
+  color: #333; 
+  font-weight: 300;
+  letter-spacing: 0.5px; 
+  margin-bottom: 2em;
+}
+
+
+.btn-read-more {
+  font-family: 'Lato', sans-serif;
+  text-decoration: none; 
+  background-color: #88c0d0;
+  color: white; 
+  padding: 1em 2em; 
+  border-radius: 5px; 
+  font-weight: 700; 
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-read-more:hover {
+  background-color: #66a0b4; 
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .mission-description {
+    padding: 0 1em; 
+    font-size: 1rem; 
+  }
+
+  .btn-read-more {
+    padding: 0.75em 1.5em;
+  }
+}
+
+.get-treated-today {
+  background-color: #88c0d0; 
+  padding: 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%; 
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; 
+}
+
+.get-treated-content {
+  flex-basis: 45%;
+  padding: 0 2em;
+}
+
+.get-treated-title {
+  font-size: 2.8rem;
+  color: #2a2a2a;
+  margin-bottom: 1em;
+}
+
+.get-treated-description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 1.5em;
+  max-width: 100%; 
+}
+
+.get-treated-button {
+  font-size: 1.1rem; 
+  padding: 1em 2em;
+}
+
+.get-treated-image {
+  flex-basis: 45%;
+  padding: 0 2em; 
+}
+
+.get-treated-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .get-treated-content,
+  .get-treated-image {
+    flex-basis: 100%;
+  }
+
+  .get-treated-image img {
+    margin-top: 2em; 
   }
 }

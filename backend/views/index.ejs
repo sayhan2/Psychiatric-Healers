@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('partials/navbar') %> 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>Home Page - Psychiatric Healers</title>
   <link rel="stylesheet" href="main.css"> 
 </head>
 <body>
-  <header>
-    <h1>Psychiatric Healers</h1>
-  </header>
+  <%- include('partials/navbar') %>
+  <div class="hero-image">
+    <div class="hero-content">
+      <h1 class="hero-heading">Psychiatric Healers</h1>
+    </div>
+  </div>
   <main>
-    <p>This is the content of the homepage.</p>
+    <section class="our-mission">
+      <h2 class="section-title">Our Mission</h2>
+      <p class="mission-description">Our mission is to provide compassionate care and comprehensive mental health services. We are dedicated to promoting wellness and helping individuals achieve their fullest potential.(fill with more text)</p>
+      <a href="/our-mission" class="btn btn-read-more">Read More</a>
+    </section>
+    <section class="get-treated-today">
+      <div class="container">
+        <div class="get-treated-content">
+          <h2 class="get-treated-title">Get Treated Today</h2>
+          <p class="get-treated-description">
+            In today's fast-paced world, access to care is more important than ever. With our virtual consultation service, 
+            you can receive personalized psychiatric care from the comfort of your home. Make an appointment and start your journey to wellness today.
+          </p>
+          <a href="/virtual-consultation" class="get-treated-button">Contact Us</a>
+        </div>
+        <div class="get-treated-image">
+          <img src="/assets/images/treatment.jpg" alt="Virtual Treatment Session">
+        </div>
+      </div>
+    </section>    
   </main>
-  <%- include('partials/footer') %> 
+  <%- include('partials/footer') %>
 </body>
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<%- include('partials/navbar') %>
+
+<main>
+  <section class="about-banner">
+    <h1>About Us</h1>
+  </section>
+
+  <section class="our-mission">
+    <h2 class="section-title">What We Do</h2>
+    <p class="mission-description">
+      Our mission is to provide compassionate care and comprehensive mental health services. We are dedicated to promoting wellness and helping individuals achieve their fullest potential.
+    </p>
+    <a href="/mission" class="btn btn-read-more">Read More</a>
+  </section>
+
+  <section class="get-treated-today">
+    <div class="container">
+      <div class="get-treated-content">
+        <h2 class="get-treated-title">Our Providers</h2>
+        <p class="get-treated-description">
+          Provider Description
+        </p>
+        <a href="/provider" class="get-treated-button">Read More</a>
+      </div>
+    </div>
+  </section>
+</main>
+<%- include('partials/footer') %>
+</body>
+</html>

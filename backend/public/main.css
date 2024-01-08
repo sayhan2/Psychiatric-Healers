@@ -109,7 +109,7 @@ header {
 }
 
 main {
-  padding: 1rem;
+  padding: 20px;
   background-color: #fafafa;
 }
 
@@ -419,7 +419,7 @@ img {
     margin-top: 2em; 
   }
 }
-/* General Styles for About Us Sections */
+
 .section {
   background-color: #fff;
   padding: 2rem;
@@ -447,7 +447,6 @@ img {
   color: #4a4a4a;
   margin-bottom: 1.5rem;
 }
-
 /* Button within each section */
 .section-button {
   font-size: 1rem;
@@ -497,4 +496,602 @@ img {
   font-size: 3em;
   padding: 0.5em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+
+
+
+
+
+.mission-section {
+  background-color: #ffffff; /* White background for the section */
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission-section-title {
+  color: #205072; /* Dark blue for the title */
+  margin-bottom: 2rem;
+}
+
+.mission-section-img {
+  max-width: 50%; /* Adjust based on your layout preference */
+  margin: 2rem auto;
+  border-radius: 8px;
+}
+
+/* Approach Section */
+.approach-section {
+  background-color: #e0f7fa; /* Light blue background to match the header */
+  padding: 3rem ;
+  margin: 2rem auto;
+  border-radius: 0;
+}
+
+.approach-section-text {
+  color: #205072; /* Dark blue for the text */
+  margin-bottom: 2rem;
+}
+
+.approach-section-btn {
+  background-color: #88c0d0; /* Matching button color to the navbar */
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.approach-section-btn:hover {
+  background-color: #66a0b4; /* A slightly darker shade for hover effect */
+}
+
+/* See More Section */
+.see-more-section {
+  background-color: #fafafa; /* Slightly off-white background for a subtle contrast */
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.see-more-title {
+  color: #205072; /* Dark blue for the title */
+  margin-bottom: 2rem;
+}
+
+.see-more-links {
+  margin-bottom: 1rem;
+}
+
+.see-more-link {
+  background-color: #a8d5ba; /* Soft green for the links */
+  color: #205072; /* Dark blue text to ensure readability */
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.see-more-link:hover {
+  background-color: #8fc0a9; /* A slightly darker green for hover effect */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .mission-section-img,
+  .approach-section-btn,
+  .see-more-link {
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+
+  .approach-section,
+  .see-more-section {
+    padding: 2rem 1rem;
+  }
+}
+/*mmission banner*/
+.mission-hero-image {
+  position: relative;
+  background-image: url('/assets/images/missionbanner.jpg'); /* New image for mission page */
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mission-hero-image {
+    height: 50vh; /* Adjust height for smaller screens */
+    background-position: top center; /* Adjust background position if necessary */
+  }
+
+  .hero-heading {
+    font-size: 2rem; /* Smaller font size for the heading on smaller screens */
+  }
+}
+/* Mission Section Styling */
+.mission-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 1200px; /* Adjust based on your layout preference */
+  margin: auto;
+}
+
+.mission-text-container {
+  flex: 1;
+  padding-right: 2rem; /* Space between text and image */
+}
+
+.mission-image-container {
+  flex: 1;
+  text-align: right; /* For alignment of the image if needed */
+}
+
+.mission-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional for rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mission-container {
+    flex-direction: column;
+  }
+
+  .mission-text-container {
+    padding-right: 0;
+    padding-bottom: 2rem; /* Space between text and image on mobile */
+  }
+
+  .mission-image-container {
+    text-align: center; /* Center image on smaller screens */
+  }
+}
+.mission-section-title {
+  font-size: 2rem; /* Larger size for the section title */
+  margin-bottom: 10rem;
+}
+
+.mission-text-container p {
+  font-size: 1.25rem; /* Larger size for the paragraph text */
+  line-height: 1.6; /* Adjust line height for better readability */
+  margin-bottom: 10rem;
+}.provider-banner {
+  background-image: url('/assets/images/provider-banner.jpg'); /* Adjust the path to your banner image */
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.banner-heading {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.provider-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.provider-image-container {
+  flex: 1;
+  text-align: left; /* Align the image to the left */
+}
+
+.provider-image {
+  max-width: 60%;
+  height: auto;
+  border-radius: 8px; /* Optional for rounded corners */
+}
+.provider-info-container {
+  flex: 1;
+  padding-left: 2rem; /* Space between image and text */
+}
+
+.provider-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #333;
+}
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 20px;
+}
+
+.service-banner {
+  width: 100%;
+  height: 400px; 
+  background-image: url('/assets/images/service-banner.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
+}
+.service-banner h1 {
+  font-size: 4em; 
+}
+.service-card {
+  width: calc(33.333% - 20px);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-card h3 {
+  color: #333;
+  margin: 16px;
+}
+
+.service-card p {
+  color: #666;
+  padding: 0 16px 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.service-read-more {
+  color: #0056b3;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  border: none;
+  background: none;
+}
+
+.service-read-more:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 1024px) {
+  .service-card {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%; 
+  }
+}
+
+.billing-section {
+  display: flex;
+  align-items: stretch; /* Align items in stretch mode so they take equal height */
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+.billing-section h2 {
+  font-size: 2rem; /* Increased font size for headings */
+}
+
+.billing-section p {
+  font-size: 1.1rem; /* Slightly larger font size for the paragraph text */
+}
+.insurance,
+.out-of-pocket {
+  flex-basis: 48%; /* Slightly less than half to account for the gap */
+  padding: 2rem;
+  background-color: #ffffff; /* Assuming white background for sections */
+}
+
+.insurance {
+  background-color: #e0f7fa; /* Light blue background for contrast */
+}
+
+.button.read-more {
+  background-color: #88c0d0; /* Light blue background for the button */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button.read-more:hover {
+  background-color: #66a0b4; /* Darker shade on hover */
+  
+}
+
+@media (max-width: 768px) {
+  .billing-section {
+    flex-direction: column;
+  }
+  
+  .insurance,
+.out-of-pocket {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This will make the content spread evenly */
+  flex-grow: 1; /* Grow to fill the space */
+  padding: 2rem;
+  background-color: #ffffff;
+}
+}
+.billing-banner {
+  background-image: url('/assets/images/billing.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.billing-banner-heading {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.insurance-banner {
+  background-image: url('/assets/images/insurance.jpg');
+  background-size: cover; /* This will ensure the banner is fully covered by the image */
+  background-position: center; /* Adjust this if you want to focus on a different part of the image */
+  height: 300px; /* Adjust the height if needed to get the desired aspect of the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.insurance-banner-heading {
+  font-size: 3rem; /* Adjust the size if needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.insurance-main-content {
+  padding: 20px;
+  background-color: transparent; /* If you don't want any background color */
+}
+
+.insurance-info {
+  max-width: 800px; /* Or whatever maximum width you prefer */
+  margin: 0 auto; /* Centers the section */
+  padding: 20px;
+  background-color: transparent; /* No background for the text */
+  /* Remove the border-radius and box-shadow if you don't need them */
+}
+
+.insurance-info h2 {
+  font-size: 2.5rem; /* Increased font size for heading */
+  color: #333; /* Dark grey color for headings */
+  margin-bottom: 1rem;
+}
+
+.insurance-info p {
+  font-size: 1.2rem; /* Increased font size for paragraph text */
+  color: #666; /* Medium grey color for paragraph text */
+  line-height: 1.8; /* Increased line height for better readability */
+  margin-bottom: 1.5rem; /* Increased margin for more space between paragraphs */
+}
+.accepted-insurances {
+  text-align: center;
+  padding: 20px;
+  background-color: transparent; /* Set to transparent or the color of your main content area */
+}
+
+.accepted-insurances h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logos-container a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* Set a fixed width for each logo container */
+  height: 100px; /* Set a fixed height for each logo container */
+  background-color: transparent; /* No background color */
+}
+
+.logos-container a img {
+  max-width: 100%; /* Ensures the logo will scale down if needed */
+  max-height: 100%; /* Ensures the logo will scale down if needed */
+  mix-blend-mode: multiply; /* Hides the white background */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logos-container {
+    justify-content: space-around;
+  }
+}
+.patient-forms {
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+  background-color: transparent; /* No additional background color */
+}
+
+.patient-forms h2 {
+  font-size: 2rem; /* Keeping title size consistent with other sections */
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.patient-forms p {
+  font-size: 1rem; /* Standard paragraph text size */
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.forms-list {
+  list-style-type: none; /* Removes the default list bullet */
+  padding: 0;
+  margin: 0;
+}
+
+.forms-list li {
+  margin-bottom: 10px; /* Spacing between list items */
+}
+
+.forms-list a {
+  font-size: 1.2rem; /* Slightly larger font size for the links */
+  color: #0056b3; /* Color that stands out but still fits with the site's theme */
+  text-decoration: none; /* No underline to keep it clean */
+  transition: color 0.3s; /* Smooth color transition for hover */
+}
+
+.forms-list a:hover {
+  color: #003366; /* Darker blue on hover for visibility */
+  text-decoration: none; /* Still no underline on hover */
+}
+.out-of-pocket-banner {
+  background-image: url('/assets/images/pocket.jpg');
+  background-size: cover;
+  background-position: center top;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.out-of-pocket-banner-heading {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+contact-banner {
+  background-image: url('/assets/images/contact.jpg');
+  background-size: cover;
+  background-position: center top;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+contact-banner-heading {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.contact-banner {
+  background-image: url('/assets/images/contact.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-info p {
+  font-size: 1.2rem; /* Or your desired size */
+  margin: 10px 0;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+  background: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #88c0d0; /* Or your desired color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #76a9ad;
+}
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.service-card {
+  flex: 0 1 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  background: #fff;
+  margin-bottom: 20px; /* Adjusts the space between rows */
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px; /* Optional: if you want rounded corners on images */
 }

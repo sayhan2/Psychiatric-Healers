@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Mission</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <%- include('partials/navbar') %>
+
+    <!-- Custom Hero Image Banner for Mission Page -->
+    <section class="mission-hero-image">
+      <div class="hero-content">
+        <h1 class="hero-heading">Our Mission</h1>
+      </div>
+    </section>
+
+    <main>
+      <!-- Our Mission Section -->
+      <section class="mission-container">
+        <div class="mission-text-container">
+          <h2 class="mission-section-title">Our Mission</h2>
+          <p>
+            Our mission is to provide compassionate care and comprehensive mental health services. We are dedicated to promoting wellness and helping individuals achieve their fullest potential.
+          </p>
+        </div>
+        <div class="mission-image-container">
+          <img src="/assets/images/mission.jpg" alt="Our Mission" class="mission-image">
+        </div>
+      </section>
+
+      <!-- Our Approach Section -->
+      <section class="approach-section">
+        <h2 class="approach-section-text">Our Approach</h2>
+        <div class="approach-content">
+          <p>
+            Learn about our personalized approach to mental health care and how we tailor our services to meet the unique needs of each individual.
+          </p>
+          <a href="/contactus" class="approach-section-btn">Contact Us</a>
+        </div>
+      </section>
+
+      <!-- See More Section -->
+      <section class="see-more-section">
+        <h2 class="see-more-title">Explore More</h2>
+        <nav class="see-more-links">
+          <a href="/services" class="see-more-link">Services</a>
+          <a href="/providers" class="see-more-link">Provider</a>
+          <a href="/billing" class="see-more-link">Billing & Support</a>
+        </nav>
+      </section>
+    </main>
+
+    <%- include('partials/footer') %>
+
+</body>
+</html>

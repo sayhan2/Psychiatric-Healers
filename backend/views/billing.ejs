@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing & Support</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<%- include('partials/navbar') %>
+
+<div class="billing-banner">
+  <h1 class="billing-banner-heading">Billing & Support</h1>
+</div>
+
+<main class="billing-main-content">
+  <div class="billing-section">
+    <div class="insurance">
+      <h2>Insurance</h2>
+      <p>If you have health insurance, you may be covered for mental health services. Please check with your provider or contact us to find out more about your options and the process.</p>
+      <a href="/insurance" class="button read-more">Read More</a>
+    </div>
+
+    <div class="out-of-pocket">
+      <h2>Out of Pocket</h2>
+      <p>For those without insurance or those choosing not to use insurance, we offer a clear and straightforward out-of-pocket payment option. Learn more about our rates and what you can expect.</p>
+      <a href="/out-of-pocket" class="button read-more">Read More</a>
+    </div>
+  </div>
+</main>
+
+<%- include('partials/footer') %>
+
+</body>
+</html>

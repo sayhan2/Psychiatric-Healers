@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<%- include('partials/navbar') %>
+
+<div class="contact-banner">
+    <h1>Contact Us</h1>
+    <p>We are providing our services to our clients remotely through video interactions at this time.</p>
+    <div class="contact-info">
+        <p><strong>Phone:</strong> 310-985-1828</p>
+        <p><strong>Fax:</strong> 310-361-1780</p>
+        <p><strong>Office address:</strong> 400 Corporate Pointe, Suite 300, Culver City, CA 90230</p>
+    </div>
+</div>
+
+<main class="contact-content">
+    <form class="contact-form" action="/submit-contact-form" method="post">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <input type="tel" id="cell" name="cell" placeholder="Your Cell No." required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" name="submit">Send Message</button>
+    </form>
+</main>
+
+<%- include('partials/footer') %>
+
+</body>
+</html>
